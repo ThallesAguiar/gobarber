@@ -1,0 +1,20 @@
+
+EXPRESS
+- express não capita os erros em controllers, ele não consegue trabalhar com ASYNC, por isso é recomendado, 
+se trabalhar com SENTRY, usar o express-async-errors, para poder trabalhar com estes erros. E o que tem que fazer é simplismente importar para o APP,
+no incio de tudo.
+
+
+MIDDLEWARES
+- Quando queremos que o middleware seja um tratamento de excessão, usamos sempre 4 parametros, err, req, res, next. 
+O Express vai entender automaticamente que é um tratamento de excessões com esses 4 parametros.
+
+
+
+
+
+
+
+YOUCH
+- Da uma tratativa nas mensagens de erros, para dar uma visualização melhor para o desenvolvedor.
+Identico que aparece nos erros do GRAPHQL
